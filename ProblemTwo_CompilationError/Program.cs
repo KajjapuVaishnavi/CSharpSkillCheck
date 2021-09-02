@@ -29,6 +29,7 @@ namespace ProblemTwo_CompilationError
             {
                 Console.WriteLine(item);
             }
+            Console.ReadLine();
         }
     }
 }
