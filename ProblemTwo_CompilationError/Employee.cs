@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace ProblemTwo_CompilationError
         public int EmpID { get; set; }
         public string EmpName { get; set; }
         public int EmpLevel { get; set; }
-        private int NoOfLeaves { get; }
+        private int NoOfLeaves { get;  }
         public DateTime DateOfJoining { get; set; }
 
         public Employee()
@@ -21,6 +21,12 @@ namespace ProblemTwo_CompilationError
         }
         public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
         {
+            this.EmpID = eID;
+            this.EmpName = eName;
+            this.EmpLevel = eLevel;
+            this.NoOfLeaves = eLevel;
+            this.DateOfJoining = eDoJ;
+            
 
         }
 
